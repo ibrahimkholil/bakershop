@@ -18,6 +18,8 @@ if( function_exists('wp_body_open') ){
 }
 ?>
 
+<div>Hellow</div>
+
 <div id="page" class="hfeed site">
      <?php bakershop_get_header_template(); ?>
 	

@@ -47,6 +47,9 @@ function bakershop_theme_setup(){
 }
 add_action( 'after_setup_theme', 'bakershop_theme_setup');
 
+// Theme functions
+require_once get_template_directory(). '/inc/theme_functions.php';
+
 // Admin theme  options
 require_once get_template_directory(). '/lib/init.php';
 

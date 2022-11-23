@@ -2,7 +2,7 @@
 /* Install Required Plugins */
 add_action( 'tgmpa_register', 'bakershop_register_required_plugins' );
 function bakershop_register_required_plugins(){
-	$plugin_dir_path = get_template_directory() . '/framework/plugins/';
+	$plugin_dir_path = get_template_directory() . '/lib/plugins/';
 	$plugins = array(
 
 		array(

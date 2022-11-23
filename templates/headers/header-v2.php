@@ -12,7 +12,7 @@
 				<span class="vertical-menu-button hidden-phone"></span>
 				<?php endif; ?>
 
-				<div class="logo-wrapper"><?php bakershop_theme_logo(); ?></div>
+				<div class="logo-wrapper"><?php mydecor_theme_logo(); ?></div>
 			</div>
 
 			<div class="menu-wrapper hidden-phone">
