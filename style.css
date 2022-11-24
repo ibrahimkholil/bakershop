@@ -389,3 +389,181 @@ template {
 /*************************************
  2. Header
 ***********************************/
+
+header .header-logo img{
+	transition: 350ms ease 0s;
+}
+.header-sticky{
+	position: relative;
+	z-index: 993;
+	width: 100%;
+	transition: 100ms ease 0s;
+}
+.mobile-logo {
+    display: none;
+}
+.sticky-logo {
+    display: none;
+}
+
+/*************************************
+ 1. Header right cart and account 
+***********************************/
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.ts-tiny-account-wrapper {
+    position: relative;
+}
+.shopping-cart-wrapper .cart-control, .my-wishlist-wrapper a, .my-account-wrapper .account-control > a, .bs-header .search-button > span {
+    color: rgba(22,22,22,1);
+    border-color: rgba(229,229,229,1);
+    line-height: 32px;
+}
+.shopping-cart-wrapper .cart-control, .my-wishlist-wrapper a, .my-account-wrapper .account-control > a, .bs-header .search-button > span {
+    width: 34px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 100%;
+    display: block;
+    cursor: pointer;
+    transition: 350ms ease 0s;
+}
+
+.my-account-wrapper .dropdown-container ul li {
+    list-style: none;
+}
+
+.shopping-cart-wrapper .dropdown-container, .my-account-wrapper .dropdown-container,
+ .header-currency ul {
+    display: none;
+    position: absolute;
+    content: "";
+    right: auto;
+    left: 50%;
+    top: 100%;
+    min-width: 120px;
+    padding: 53px 30px 30px 30px;
+}
+ .header-right > * {
+    margin-right: 10px;
+}
+.my-wishlist-wrapper, .shopping-cart-wrapper {
+    position: relative;
+}
+ .my-wishlist-wrapper a:before {
+    font-family: 'Font Awesome 5 Free';
+    position: relative;
+    letter-spacing: 0;
+    font-weight: 900;
+    display: inline-block;
+    line-height: 32px;
+    font-size: 14px;
+}
+.my-wishlist-wrapper a:before {
+    content: "\f004";
+    font-weight: 400;
+}
+
+.shopping-cart-wrapper .cart-control .cart-number, .header-wishlist .count-number {
+    position: absolute;
+    right: -4px;
+    top: -2px;
+    left: auto;
+    width: 14px;
+    height: 14px;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.header-wishlist .count-number, .cart-control .cart-number, #ts-mobile-button-bottom .tini-wishlist .count-number {
+    background-color: rgba(162,4,1,1);
+    color: rgba(255,255,255,1);
+}
+
+.shopping-cart-wrapper .dropdown-container, 
+.my-account-wrapper .dropdown-container, 
+ .header-currency ul {
+    display: none;
+    position: absolute;
+    content: "";
+    right: auto;
+    left: 50%;
+    top: 100%;
+    min-width: 120px;
+    padding: 53px 30px 30px 30px;
+}
+
+.shopping-cart-wrapper:hover .cart-control, .my-account-wrapper .account-control > a:hover,
+ .my-wishlist-wrapper:hover a, .bs-header .search-button > span:hover {
+    color: rgba(162,4,1,1);
+    border-color: rgba(162,4,1,1);
+}
+
+.my-account-wrapper .dropdown-container {
+    width: 300px;
+    right: auto;
+    left: 50%;
+    margin-left: -196px;
+}
+body.logged-in .my-account-wrapper .dropdown-container {
+    width: 160px;
+    padding-top: 43px;
+    padding-bottom: 20px;
+    margin-left: -80px;
+}
+
+.header-currency ul li, .account-dropdown-form ul li {
+    padding: 5px 0;
+    margin: 0;
+    position: relative;
+}
+.my-account-wrapper .dropdown-container ul li a {
+    text-decoration: none;
+}
+.my-account-wrapper .dropdown-container .form-content {
+    position: relative;
+    z-index: 1;
+}
+h6, .h6, .dropdown-container .dropdown-title, #customer_login h2, 
+.woocommerce table.order_details tfoot .amount, .woocommerce table.order_details tfoot .amount, 
+.dokan-pagination-container .dokan-pagination, .woocommerce-tabs #comments>h2, 
+.comment-respond #reply-title, .ts-product-brand-wrapper .item .meta-wrapper h3, 
+.single-post>.entry-content>.content-wrapper, .ts-portfolio-wrapper .filter-bar li,
+ .elementor-widget-wp-widget-nav_menu .elementor-widget-container>h5, 
+ .ts-list-of-product-categories-wrapper .heading-title, 
+ .woocommerce div.product .summary .woocommerce-tabs ul.tabs li,
+  .wcpr-overall-rating-and-rating-count h2, 
+  #page .summary .yith-wfbt-section>h3 {
+    font-size: 18px;
+    line-height: 26px;
+}
+.my-account-wrapper .dropdown-container ul li a {
+    font-size: 16px;
+}
+.shopping-cart-wrapper:hover .dropdown-container, 
+.my-account-wrapper:hover .dropdown-container, 
+ .header-currency:hover ul {
+    display: block;
+    -webkit-animation-duration: 300ms;
+    -moz-animation-duration: 300ms;
+    animation-duration: 300ms;
+    animation-delay: 100ms;
+    -webkit-animation-delay: 100ms;
+    -moz-animation-delay: 100ms;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: animation_menu;
+    -moz-animation-name: animation_menu;
+    animation-name: animation_menu;
+    -webkit-transform-origin: 0 0 0;
+    -moz-transform-origin: 0 0 0;
+    -ms-transform-origin: 0 0 0;
+    z-index: 5;
+}

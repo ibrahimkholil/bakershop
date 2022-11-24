@@ -18,9 +18,7 @@ if( function_exists('wp_body_open') ){
 }
 ?>
 
-<div>Hellow</div>
-
-<div id="page" class="hfeed site">
+<div id="page" class="site">
      <?php bakershop_get_header_template(); ?>
 	
 	

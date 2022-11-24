@@ -81,7 +81,7 @@ $option_fields['general'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_logo'
+		'id'        => 'bs_logo'
 		,'type'     => 'media'
 		,'url'      => true
 		,'title'    => esc_html__( 'Logo', 'bakershop' )
@@ -91,7 +91,7 @@ $option_fields['general'] = array(
 		,'default'  => array( 'url' => $logo_url )
 	)
 	,array(
-		'id'        => 'ts_logo_mobile'
+		'id'        => 'bs_logo_mobile'
 		,'type'     => 'media'
 		,'url'      => true
 		,'title'    => esc_html__( 'Mobile Logo', 'bakershop' )
@@ -101,7 +101,7 @@ $option_fields['general'] = array(
 		,'default'  => array( 'url' => '' )
 	)
 	,array(
-		'id'        => 'ts_logo_sticky'
+		'id'        => 'bs_logo_sticky'
 		,'type'     => 'media'
 		,'url'      => true
 		,'title'    => esc_html__( 'Sticky Logo', 'bakershop' )
@@ -111,7 +111,7 @@ $option_fields['general'] = array(
 		,'default'  => array( 'url' => '' )
 	)
 	,array(
-		'id'        => 'ts_logo_width'
+		'id'        => 'bs_logo_width'
 		,'type'     => 'text'
 		,'url'      => true
 		,'title'    => esc_html__( 'Logo Width', 'bakershop' )
@@ -120,7 +120,7 @@ $option_fields['general'] = array(
 		,'default'  => '155'
 	)
 	,array(
-		'id'        => 'ts_device_logo_width'
+		'id'        => 'bs_device_logo_width'
 		,'type'     => 'text'
 		,'url'      => true
 		,'title'    => esc_html__( 'Logo Width on Device', 'bakershop' )
@@ -129,7 +129,7 @@ $option_fields['general'] = array(
 		,'default'  => '141'
 	)
 	,array(
-		'id'        => 'ts_favicon'
+		'id'        => 'bs_favicon'
 		,'type'     => 'media'
 		,'url'      => true
 		,'title'    => esc_html__( 'Favicon', 'bakershop' )
@@ -139,7 +139,7 @@ $option_fields['general'] = array(
 		,'default'  => array( 'url' => $favicon_url )
 	)
 	,array(
-		'id'        => 'ts_text_logo'
+		'id'        => 'bs_text_logo'
 		,'type'     => 'text'
 		,'title'    => esc_html__( 'Text Logo', 'bakershop' )
 		,'subtitle' => ''
@@ -155,38 +155,38 @@ $option_fields['general'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_layout_fullwidth'
+		'id'        => 'bs_layout_fullwidth'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Layout Fullwidth', 'bakershop' )
 		,'subtitle' => ''
 		,'default'  => false
 	)
 	,array(
-		'id'        => 'ts_header_layout_fullwidth'
+		'id'        => 'bs_header_layout_fullwidth'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Header Layout Fullwidth', 'bakershop' )
 		,'subtitle' => ''
 		,'default'  => false
-		,'required'	=> array( 'ts_layout_fullwidth', 'equals', '1' )
+		,'required'	=> array( 'bs_layout_fullwidth', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_main_content_layout_fullwidth'
+		'id'        => 'bs_main_content_layout_fullwidth'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Main Content Layout Fullwidth', 'bakershop' )
 		,'subtitle' => ''
 		,'default'  => false
-		,'required'	=> array( 'ts_layout_fullwidth', 'equals', '1' )
+		,'required'	=> array( 'bs_layout_fullwidth', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_footer_layout_fullwidth'
+		'id'        => 'bs_footer_layout_fullwidth'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Footer Layout Fullwidth', 'bakershop' )
 		,'subtitle' => ''
 		,'default'  => false
-		,'required'	=> array( 'ts_layout_fullwidth', 'equals', '1' )
+		,'required'	=> array( 'bs_layout_fullwidth', 'equals', '1' )
 	)
 	,array(
-		'id'       	=> 'ts_layout_style'
+		'id'       	=> 'bs_layout_style'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Layout Style', 'bakershop' )
 		,'subtitle' => esc_html__( 'You can override this option for the individual page', 'bakershop' )
@@ -197,7 +197,7 @@ $option_fields['general'] = array(
 		)
 		,'default'  => 'wide'
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
-		,'required'	=> array( 'ts_layout_fullwidth', 'equals', '0' )
+		,'required'	=> array( 'bs_layout_fullwidth', 'equals', '0' )
 	)
 	
 	,array(
@@ -208,7 +208,7 @@ $option_fields['general'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_enable_rtl'
+		'id'        => 'bs_enable_rtl'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Enable Right To Left', 'bakershop' )
 		,'subtitle' => ''
@@ -223,7 +223,7 @@ $option_fields['general'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_smooth_scroll'
+		'id'        => 'bs_smooth_scroll'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Enable Smooth Scroll', 'bakershop' )
 		,'subtitle' => ''
@@ -238,14 +238,14 @@ $option_fields['general'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_back_to_top_button'
+		'id'        => 'bs_back_to_top_button'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Enable Back To Top Button', 'bakershop' )
 		,'subtitle' => ''
 		,'default'  => true
 	)
 	,array(
-		'id'        => 'ts_back_to_top_button_on_mobile'
+		'id'        => 'bs_back_to_top_button_on_mobile'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Enable Back To Top Button On Mobile', 'bakershop' )
 		,'subtitle' => ''
@@ -260,14 +260,14 @@ $option_fields['general'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_loading_screen'
+		'id'        => 'bs_loading_screen'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Loading Screen', 'bakershop' )
 		,'subtitle' => ''
 		,'default'  => false
 	)
 	,array(
-		'id'        => 'ts_loading_image'
+		'id'        => 'bs_loading_image'
 		,'type'     => 'image_select'
 		,'title'    => esc_html__( 'Loading Image', 'bakershop' )
 		,'subtitle' => ''
@@ -276,7 +276,7 @@ $option_fields['general'] = array(
 		,'default'  => '1'
 	)
 	,array(
-		'id'        => 'ts_custom_loading_image'
+		'id'        => 'bs_custom_loading_image'
 		,'type'     => 'media'
 		,'url'      => true
 		,'title'    => esc_html__( 'Custom Loading Image', 'bakershop' )
@@ -286,7 +286,7 @@ $option_fields['general'] = array(
 		,'default'  => array( 'url' => '' )
 	)
 	,array(
-		'id'       	=> 'ts_display_loading_screen_in'
+		'id'       	=> 'bs_display_loading_screen_in'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Display Loading Screen In', 'bakershop' )
 		,'subtitle' => ''
@@ -300,7 +300,7 @@ $option_fields['general'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
 	)
 	,array(
-		'id'       	=> 'ts_loading_screen_exclude_pages'
+		'id'       	=> 'bs_loading_screen_exclude_pages'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Exclude Pages', 'bakershop' )
 		,'subtitle' => ''
@@ -308,10 +308,10 @@ $option_fields['general'] = array(
 		,'data'     => 'pages'
 		,'multi'    => true
 		,'default'	=> ''
-		,'required'	=> array( 'ts_display_loading_screen_in', 'equals', 'all-pages' )
+		,'required'	=> array( 'bs_display_loading_screen_in', 'equals', 'all-pages' )
 	)
 	,array(
-		'id'       	=> 'ts_loading_screen_specific_pages'
+		'id'       	=> 'bs_loading_screen_specific_pages'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Specific Pages', 'bakershop' )
 		,'subtitle' => ''
@@ -319,14 +319,14 @@ $option_fields['general'] = array(
 		,'data'     => 'pages'
 		,'multi'    => true
 		,'default'	=> ''
-		,'required'	=> array( 'ts_display_loading_screen_in', 'equals', 'specific-pages' )
+		,'required'	=> array( 'bs_display_loading_screen_in', 'equals', 'specific-pages' )
 	)
 );
 
 /*** Color Scheme Tab ***/
 $option_fields['color-scheme'] = array(
 	array(
-		'id'          => 'ts_color_scheme'
+		'id'          => 'bs_color_scheme'
 		,'type'       => 'image_select'
 		,'presets'    => true
 		,'full_width' => false
@@ -351,7 +351,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_primary_color'
+		'id'       => 'bs_primary_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Primary Color', 'bakershop' )
 		,'subtitle' => ''
@@ -361,7 +361,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_text_color_in_bg_primary'
+		'id'       => 'bs_text_color_in_bg_primary'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Text Color In Background Primary Color', 'bakershop' )
 		,'subtitle' => ''
@@ -378,7 +378,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_main_content_background_color'
+		'id'       => 'bs_main_content_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Main Content Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -388,7 +388,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_text_color'
+		'id'       => 'bs_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -398,7 +398,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_text_light_color'
+		'id'       => 'bs_text_light_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Text Light Color', 'bakershop' )
 		,'subtitle' => ''
@@ -408,7 +408,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_text_bold_color'
+		'id'       => 'bs_text_bold_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Text Bold Color', 'bakershop' )
 		,'subtitle' => ''
@@ -418,7 +418,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_text_highlight_color'
+		'id'       => 'bs_text_highlight_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Text Highlight Color', 'bakershop' )
 		,'subtitle' => ''
@@ -428,7 +428,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_link_color'
+		'id'       => 'bs_link_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Link Color', 'bakershop' )
 		,'subtitle' => ''
@@ -438,7 +438,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_link_color_hover'
+		'id'       => 'bs_link_color_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Link Color Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -448,7 +448,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_border_color'
+		'id'       => 'bs_border_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Border Color', 'bakershop' )
 		,'subtitle' => ''
@@ -465,7 +465,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_input_text_color'
+		'id'       => 'bs_input_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Input - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -475,7 +475,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_input_border_color'
+		'id'       => 'bs_input_border_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Input - Border Color', 'bakershop' )
 		,'subtitle' => ''
@@ -485,7 +485,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_input_text_hover'
+		'id'       => 'bs_input_text_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Input - Text Color Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -495,7 +495,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_input_border_hover'
+		'id'       => 'bs_input_border_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Input - Border Color Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -512,7 +512,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_button_text_color'
+		'id'       => 'bs_button_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Button - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -522,7 +522,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_button_background_color'
+		'id'       => 'bs_button_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Button - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -532,7 +532,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_button_border_color'
+		'id'       => 'bs_button_border_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Button - Border Color', 'bakershop' )
 		,'subtitle' => ''
@@ -542,7 +542,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_button_text_hover'
+		'id'       => 'bs_button_text_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Button - Text Color Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -552,7 +552,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_button_background_hover'
+		'id'       => 'bs_button_background_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Button - Background Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -562,7 +562,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_button_border_hover'
+		'id'       => 'bs_button_border_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Button - Border Color Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -580,7 +580,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_breadcrumb_text_color'
+		'id'       => 'bs_breadcrumb_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Breadcrumb - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -590,7 +590,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_breadcrumb_heading_color'
+		'id'       => 'bs_breadcrumb_heading_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Breadcrumb - Heading Color', 'bakershop' )
 		,'subtitle' => ''
@@ -600,7 +600,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_breadcrumb_link_color_hover'
+		'id'       => 'bs_breadcrumb_link_color_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Breadcrumb - Link Color Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -610,7 +610,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_breadcrumb_img_text_color'
+		'id'       => 'bs_breadcrumb_img_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Breadcrumb Has Background Image - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -620,7 +620,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_breadcrumb_img_heading_color'
+		'id'       => 'bs_breadcrumb_img_heading_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Breadcrumb Has Background Image - Heading Color', 'bakershop' )
 		,'subtitle' => ''
@@ -630,7 +630,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_breadcrumb_img_link_color_hover'
+		'id'       => 'bs_breadcrumb_img_link_color_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Breadcrumb Has Background Image - Link Color Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -640,7 +640,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_breadcrumb_background_color'
+		'id'       => 'bs_breadcrumb_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Breadcrumb - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -650,7 +650,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_breadcrumb_border_color'
+		'id'       => 'bs_breadcrumb_border_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Breadcrumb - Border Color', 'bakershop' )
 		,'subtitle' => ''
@@ -668,7 +668,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_shop_categories_background_color'
+		'id'       => 'bs_shop_categories_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Shop Categories Background Colors', 'bakershop' )
 		,'subtitle' => ''
@@ -693,7 +693,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_middle_header_background_color'
+		'id'       => 'bs_middle_header_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Middle Header - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -703,7 +703,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_middle_header_icon_color'
+		'id'       => 'bs_middle_header_icon_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Middle Header - Icon Color', 'bakershop' )
 		,'subtitle' => ''
@@ -713,7 +713,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_middle_header_icon_border_color'
+		'id'       => 'bs_middle_header_icon_border_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Middle Header - Icon Border Color', 'bakershop' )
 		,'subtitle' => ''
@@ -723,7 +723,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_middle_header_icon_color_hover'
+		'id'       => 'bs_middle_header_icon_color_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Middle Header - Icon Hover Color', 'bakershop' )
 		,'subtitle' => ''
@@ -733,7 +733,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_middle_header_icon_border_hover'
+		'id'       => 'bs_middle_header_icon_border_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Middle Header - Icon Border Hover Color', 'bakershop' )
 		,'subtitle' => ''
@@ -751,7 +751,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_header_cart_number_color'
+		'id'       => 'bs_header_cart_number_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Header Number Of Cart Color', 'bakershop' )
 		,'subtitle' => ''
@@ -761,7 +761,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_header_cart_number_background_color'
+		'id'       => 'bs_header_cart_number_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Header Number Of Cart Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -779,7 +779,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_header_search_text_color'
+		'id'       => 'bs_header_search_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Header Search - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -789,7 +789,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_header_search_placeholder_text'
+		'id'       => 'bs_header_search_placeholder_text'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Header Search Placeholder - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -799,7 +799,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_header_search_icon_color'
+		'id'       => 'bs_header_search_icon_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Header Search - Icon Color', 'bakershop' )
 		,'subtitle' => ''
@@ -809,7 +809,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_header_search_icon_hover_color'
+		'id'       => 'bs_header_search_icon_hover_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Header Search - Icon Hover Color', 'bakershop' )
 		,'subtitle' => ''
@@ -819,7 +819,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_header_search_background_color'
+		'id'       => 'bs_header_search_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Header Search - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -829,7 +829,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_header_search_border_color'
+		'id'       => 'bs_header_search_border_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Header Search - Border Color', 'bakershop' )
 		,'subtitle' => ''
@@ -847,7 +847,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_bottom_header_background_color'
+		'id'       => 'bs_bottom_header_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Bottom Header - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -857,7 +857,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_bottom_header_border_color'
+		'id'       => 'bs_bottom_header_border_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Bottom Header - Border Color', 'bakershop' )
 		,'subtitle' => ''
@@ -875,7 +875,7 @@ $option_fields['color-scheme'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'       => 'ts_menu_text_color'
+		'id'       => 'bs_menu_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Menu - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -885,7 +885,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_menu_text_hover'
+		'id'       => 'bs_menu_text_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Menu - Text Color Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -902,7 +902,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_sub_menu_text_color'
+		'id'       => 'bs_sub_menu_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Sub Menu - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -912,7 +912,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_sub_menu_text_hover'
+		'id'       => 'bs_sub_menu_text_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Sub Menu - Text Color Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -922,7 +922,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_sub_menu_heading_color'
+		'id'       => 'bs_sub_menu_heading_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Sub Menu - Heading Color', 'bakershop' )
 		,'subtitle' => ''
@@ -932,7 +932,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_sub_menu_background_color'
+		'id'       => 'bs_sub_menu_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Sub Menu - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -950,7 +950,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_vertical_icon_color'
+		'id'       => 'bs_vertical_icon_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Vertical Menu - Icon Color', 'bakershop' )
 		,'subtitle' => ''
@@ -960,7 +960,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_vertical_menu_text_color'
+		'id'       => 'bs_vertical_menu_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Vertical Menu - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -970,7 +970,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_vertical_menu_text_hover'
+		'id'       => 'bs_vertical_menu_text_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Vertical Menu - Text Color Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -980,7 +980,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_vertical_menu_border_color'
+		'id'       => 'bs_vertical_menu_border_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Vertical Menu - Border Color', 'bakershop' )
 		,'subtitle' => ''
@@ -990,7 +990,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_vertical_menu_background_color'
+		'id'       => 'bs_vertical_menu_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Vertical Menu - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1000,7 +1000,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_vertical_sub_menu_text_color'
+		'id'       => 'bs_vertical_sub_menu_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Vertical Sub Menu - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1010,7 +1010,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_vertical_sub_menu_text_hover'
+		'id'       => 'bs_vertical_sub_menu_text_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Vertical Sub Menu - Text Color Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -1028,7 +1028,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_header_mobile_background_color'
+		'id'       => 'bs_header_mobile_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Header Mobile - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1038,7 +1038,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_header_mobile_icon_color'
+		'id'       => 'bs_header_mobile_icon_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Header Mobile - Icon Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1048,7 +1048,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_header_mobile_cart_number_text_color'
+		'id'       => 'bs_header_mobile_cart_number_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Header Mobile - Cart Number Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1058,7 +1058,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_header_mobile_cart_number_background_color'
+		'id'       => 'bs_header_mobile_cart_number_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Header Mobile - Cart Number Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1076,7 +1076,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_tab_menu_mobile_text_color'
+		'id'       => 'bs_tab_menu_mobile_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Menu Tab Mobile - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1086,7 +1086,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_tab_menu_mobile_border_color'
+		'id'       => 'bs_tab_menu_mobile_border_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Menu Tab Mobile - Border Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1096,7 +1096,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_tab_menu_mobile_text_hover'
+		'id'       => 'bs_tab_menu_mobile_text_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Menu Tab Mobile - Text Hover Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1106,7 +1106,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_tab_menu_mobile_background_hover'
+		'id'       => 'bs_tab_menu_mobile_background_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Menu Tab Mobile - Background Hover Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1116,7 +1116,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_menu_mobile_text_color'
+		'id'       => 'bs_menu_mobile_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Menu Mobile - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1126,7 +1126,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_menu_mobile_text_hover'
+		'id'       => 'bs_menu_mobile_text_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Menu Mobile - Text Color Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -1136,7 +1136,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_menu_mobile_heading_color'
+		'id'       => 'bs_menu_mobile_heading_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Menu Mobile - Heading Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1146,7 +1146,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_menu_mobile_background_color'
+		'id'       => 'bs_menu_mobile_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Menu Mobile - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1156,7 +1156,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_menu_mobile_border_color'
+		'id'       => 'bs_menu_mobile_border_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Menu Mobile - Border Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1166,7 +1166,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_bottom_menu_mobile_background_color'
+		'id'       => 'bs_bottom_menu_mobile_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Bottom Menu Mobile - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1176,7 +1176,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_bottom_menu_mobile_text_color'
+		'id'       => 'bs_bottom_menu_mobile_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Bottom Menu Mobile - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1194,7 +1194,7 @@ $option_fields['color-scheme'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'       => 'ts_footer_background_color'
+		'id'       => 'bs_footer_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Footer - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1204,7 +1204,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_footer_text_color'
+		'id'       => 'bs_footer_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Footer - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1214,7 +1214,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_footer_text_hover'
+		'id'       => 'bs_footer_text_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Footer - Text Color Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -1224,7 +1224,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_footer_heading_color'
+		'id'       => 'bs_footer_heading_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Footer - Heading Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1234,7 +1234,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_footer_border_color'
+		'id'       => 'bs_footer_border_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Footer - Border Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1244,7 +1244,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_footer_border_hover'
+		'id'       => 'bs_footer_border_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Footer - Border Color Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -1262,7 +1262,7 @@ $option_fields['color-scheme'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'       => 'ts_product_name_text_color'
+		'id'       => 'bs_product_name_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Product Name - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1272,7 +1272,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_product_name_text_hover'
+		'id'       => 'bs_product_name_text_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Product Name - Text Hover Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1282,7 +1282,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_product_price_color'
+		'id'       => 'bs_product_price_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Product - Price Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1292,7 +1292,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_product_del_price_color'
+		'id'       => 'bs_product_del_price_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Product - Del Price Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1302,7 +1302,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_product_sale_price_color'
+		'id'       => 'bs_product_sale_price_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Product - Sale Price Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1312,7 +1312,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_rating_color'
+		'id'       => 'bs_rating_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Product - Rating Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1322,7 +1322,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_rating_fill_color'
+		'id'       => 'bs_rating_fill_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Product - Rating Fill Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1340,7 +1340,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_product_button_thumbnail_text_color'
+		'id'       => 'bs_product_button_thumbnail_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Thumbnail Button - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1350,7 +1350,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_product_button_thumbnail_background_color'
+		'id'       => 'bs_product_button_thumbnail_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Thumbnail Button - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1360,7 +1360,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_product_button_thumbnail_text_hover'
+		'id'       => 'bs_product_button_thumbnail_text_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Thumbnail Button - Text Color Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -1370,7 +1370,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_product_button_thumbnail_background_hover'
+		'id'       => 'bs_product_button_thumbnail_background_hover'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Thumbnail Button - Background Hover', 'bakershop' )
 		,'subtitle' => ''
@@ -1388,7 +1388,7 @@ $option_fields['color-scheme'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       => 'ts_product_sale_label_text_color'
+		'id'       => 'bs_product_sale_label_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Sale Label - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1398,7 +1398,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_product_sale_label_background_color'
+		'id'       => 'bs_product_sale_label_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Sale Label - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1408,7 +1408,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_product_new_label_text_color'
+		'id'       => 'bs_product_new_label_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'New Label - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1418,7 +1418,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_product_new_label_background_color'
+		'id'       => 'bs_product_new_label_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'New Label - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1428,7 +1428,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_product_feature_label_text_color'
+		'id'       => 'bs_product_feature_label_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Feature Label - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1438,7 +1438,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_product_feature_label_background_color'
+		'id'       => 'bs_product_feature_label_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'Feature Label - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1448,7 +1448,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_product_outstock_label_text_color'
+		'id'       => 'bs_product_outstock_label_text_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'OutStock Label - Text Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1458,7 +1458,7 @@ $option_fields['color-scheme'] = array(
 		)
 	)
 	,array(
-		'id'       => 'ts_product_outstock_label_background_color'
+		'id'       => 'bs_product_outstock_label_background_color'
 		,'type'     => 'color_rgba'
 		,'title'    => esc_html__( 'OutStock Label - Background Color', 'bakershop' )
 		,'subtitle' => ''
@@ -1479,7 +1479,7 @@ $option_fields['typography'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'       			=> 'ts_body_font'
+		'id'       			=> 'bs_body_font'
 		,'type'     		=> 'typography'
 		,'title'    		=> esc_html__( 'Body Font', 'bakershop' )
 		,'subtitle' 		=> ''
@@ -1502,7 +1502,7 @@ $option_fields['typography'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 20)
 	)
 	,array(
-		'id'       			=> 'ts_heading_font'
+		'id'       			=> 'bs_heading_font'
 		,'type'     		=> 'typography'
 		,'title'    		=> esc_html__( 'Heading Font', 'bakershop' )
 		,'subtitle' 		=> ''
@@ -1524,7 +1524,7 @@ $option_fields['typography'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 20)
 	)
 	,array(
-		'id'       			=> 'ts_menu_font'
+		'id'       			=> 'bs_menu_font'
 		,'type'     		=> 'typography'
 		,'title'    		=> esc_html__( 'Menu Font', 'bakershop' )
 		,'subtitle' 		=> ''
@@ -1546,7 +1546,7 @@ $option_fields['typography'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 20)
 	)
 	,array(
-		'id'       			=> 'ts_sub_menu_font'
+		'id'       			=> 'bs_sub_menu_font'
 		,'type'     		=> 'typography'
 		,'title'    		=> esc_html__( 'Sub Menu Font', 'bakershop' )
 		,'subtitle' 		=> ''
@@ -1575,7 +1575,7 @@ $option_fields['typography'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_custom_font_ttf'
+		'id'        => 'bs_custom_font_ttf'
 		,'type'     => 'media'
 		,'url'      => true
 		,'preview'  => false
@@ -1601,7 +1601,7 @@ $option_fields['typography'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       		=> 'ts_h1_font'
+		'id'       		=> 'bs_h1_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H1 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1620,7 +1620,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h2_font'
+		'id'       		=> 'bs_h2_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H2 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1639,7 +1639,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h3_font'
+		'id'       		=> 'bs_h3_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H3 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1658,7 +1658,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h4_font'
+		'id'       		=> 'bs_h4_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H4 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1677,7 +1677,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h5_font'
+		'id'       		=> 'bs_h5_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H5 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1696,7 +1696,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h6_font'
+		'id'       		=> 'bs_h6_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H6 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1715,7 +1715,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_small_font'
+		'id'       		=> 'bs_small_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'Small Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1734,7 +1734,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_button_font'
+		'id'       		=> 'bs_button_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'Button Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1753,7 +1753,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h1_ipad_font'
+		'id'       		=> 'bs_h1_ipad_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H1 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1774,7 +1774,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h2_ipad_font'
+		'id'       		=> 'bs_h2_ipad_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H2 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1795,7 +1795,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h3_ipad_font'
+		'id'       		=> 'bs_h3_ipad_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H3 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1816,7 +1816,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h4_ipad_font'
+		'id'       		=> 'bs_h4_ipad_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H4 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1837,7 +1837,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h5_ipad_font'
+		'id'       		=> 'bs_h5_ipad_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H5 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1858,7 +1858,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h6_ipad_font'
+		'id'       		=> 'bs_h6_ipad_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H6 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1887,7 +1887,7 @@ $option_fields['typography'] = array(
 		,'desc'   => ''
 	)
 	,array(
-		'id'       		=> 'ts_h1_mobile_font'
+		'id'       		=> 'bs_h1_mobile_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H1 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1908,7 +1908,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h2_mobile_font'
+		'id'       		=> 'bs_h2_mobile_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H2 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1929,7 +1929,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h3_mobile_font'
+		'id'       		=> 'bs_h3_mobile_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H3 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1950,7 +1950,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h4_mobile_font'
+		'id'       		=> 'bs_h4_mobile_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H4 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1971,7 +1971,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h5_mobile_font'
+		'id'       		=> 'bs_h5_mobile_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H5 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -1992,7 +1992,7 @@ $option_fields['typography'] = array(
 		)
 	)
 	,array(
-		'id'       		=> 'ts_h6_mobile_font'
+		'id'       		=> 'bs_h6_mobile_font'
 		,'type'     	=> 'typography'
 		,'title'    	=> esc_html__( 'H6 Font Size', 'bakershop' )
 		,'subtitle' 	=> ''
@@ -2024,7 +2024,7 @@ $option_fields['header'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_header_layout'
+		'id'        => 'bs_header_layout'
 		,'type'     => 'image_select'
 		,'title'    => esc_html__( 'Header Layout', 'bakershop' )
 		,'subtitle' => ''
@@ -2033,7 +2033,7 @@ $option_fields['header'] = array(
 		,'default'  => 'v1'
 	)
 	,array(
-		'id'        => 'ts_enable_sticky_header'
+		'id'        => 'bs_enable_sticky_header'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Sticky Header', 'bakershop' )
 		,'subtitle' => ''
@@ -2042,7 +2042,7 @@ $option_fields['header'] = array(
 		,'off'		=> esc_html__( 'Disable', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_enable_search'
+		'id'        => 'bs_enable_search'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Search Bar', 'bakershop' )
 		,'subtitle' => ''
@@ -2051,17 +2051,17 @@ $option_fields['header'] = array(
 		,'off'		=> esc_html__( 'Disable', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_search_popular_keywords'
+		'id'        => 'bs_search_popular_keywords'
 		,'type'     => 'textarea'
 		,'title'    => esc_html__( 'Popular Keywords For Search', 'bakershop' )
 		,'subtitle' => esc_html__( 'A comma separated list of keywords. Ex: Furniture, Outdoor, Sofa', 'bakershop' )
 		,'desc'     => ''
 		,'default'  => ''
 		,'validate' => 'no_html'
-		,'required'	=> array( 'ts_enable_search', 'equals', '1' )
+		,'required'	=> array( 'bs_enable_search', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_enable_tiny_wishlist'
+		'id'        => 'bs_enable_tiny_wishlist'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Wishlist', 'bakershop' )
 		,'subtitle' => ''
@@ -2070,7 +2070,7 @@ $option_fields['header'] = array(
 		,'off'		=> esc_html__( 'Disable', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_header_currency'
+		'id'        => 'bs_header_currency'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Header Currency', 'bakershop' )
 		,'subtitle' => esc_html__( 'Only available on some header layouts. If you don\'t install WooCommerce Multilingual plugin, it may display demo html', 'bakershop' )
@@ -2079,7 +2079,7 @@ $option_fields['header'] = array(
 		,'off'		=> esc_html__( 'Disable', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_header_language'
+		'id'        => 'bs_header_language'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Header Language', 'bakershop' )
 		,'subtitle' => esc_html__( 'Only available on some header layouts. If you don\'t install WPML plugin, it may display demo html', 'bakershop' )
@@ -2088,7 +2088,7 @@ $option_fields['header'] = array(
 		,'off'		=> esc_html__( 'Disable', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_enable_tiny_account'
+		'id'        => 'bs_enable_tiny_account'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'My Account', 'bakershop' )
 		,'subtitle' => ''
@@ -2097,7 +2097,7 @@ $option_fields['header'] = array(
 		,'off'		=> esc_html__( 'Disable', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_enable_tiny_shopping_cart'
+		'id'        => 'bs_enable_tiny_shopping_cart'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Shopping Cart', 'bakershop' )
 		,'subtitle' => ''
@@ -2106,27 +2106,27 @@ $option_fields['header'] = array(
 		,'off'		=> esc_html__( 'Disable', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_shopping_cart_sidebar'
+		'id'        => 'bs_shopping_cart_sidebar'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Shopping Cart Sidebar', 'bakershop' )
 		,'subtitle' => esc_html__( 'Show shopping cart in sidebar instead of dropdown. You need to update cart after changing', 'bakershop' )
 		,'default'  => false
 		,'on'		=> esc_html__( 'Enable', 'bakershop' )
 		,'off'		=> esc_html__( 'Disable', 'bakershop' )
-		,'required'	=> array( 'ts_enable_tiny_shopping_cart', 'equals', '1' )
+		,'required'	=> array( 'bs_enable_tiny_shopping_cart', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_show_shopping_cart_after_adding'
+		'id'        => 'bs_show_shopping_cart_after_adding'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Show Shopping Cart After Adding Product To Cart', 'bakershop' )
 		,'subtitle' => esc_html__( 'You need to enable Ajax add to cart in WooCommerce > Settings > Products', 'bakershop' )
 		,'default'  => false
 		,'on'		=> esc_html__( 'Enable', 'bakershop' )
 		,'off'		=> esc_html__( 'Disable', 'bakershop' )
-		,'required'	=> array( 'ts_shopping_cart_sidebar', 'equals', '1' )
+		,'required'	=> array( 'bs_shopping_cart_sidebar', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_add_to_cart_effect'
+		'id'        => 'bs_add_to_cart_effect'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Add To Cart Effect', 'bakershop' )
 		,'subtitle' => esc_html__( 'You need to enable Ajax add to cart in WooCommerce > Settings > Products. If "Show Shopping Cart After Adding Product To Cart" is enabled, this option will be disabled', 'bakershop' )
@@ -2147,7 +2147,7 @@ $option_fields['header'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_breadcrumb_layout'
+		'id'        => 'bs_breadcrumb_layout'
 		,'type'     => 'image_select'
 		,'title'    => esc_html__( 'Breadcrumb Layout', 'bakershop' )
 		,'subtitle' => ''
@@ -2156,14 +2156,14 @@ $option_fields['header'] = array(
 		,'default'  => 'v1'
 	)
 	,array(
-		'id'        => 'ts_enable_breadcrumb_background_image'
+		'id'        => 'bs_enable_breadcrumb_background_image'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Enable Breadcrumbs Background Image', 'bakershop' )
 		,'subtitle' => esc_html__( 'You can set background color by going to Color Scheme tab > Breadcrumb Colors section', 'bakershop' )
 		,'default'  => true
 	)
 	,array(
-		'id'        => 'ts_bg_breadcrumbs'
+		'id'        => 'bs_bg_breadcrumbs'
 		,'type'     => 'media'
 		,'url'      => true
 		,'title'    => esc_html__( 'Breadcrumbs Background Image', 'bakershop' )
@@ -2173,7 +2173,7 @@ $option_fields['header'] = array(
 		,'default'  => array( 'url' => '' )
 	)
 	,array(
-		'id'        => 'ts_breadcrumb_bg_parallax'
+		'id'        => 'bs_breadcrumb_bg_parallax'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Enable Breadcrumbs Background Parallax', 'bakershop' )
 		,'subtitle' => ''
@@ -2188,7 +2188,7 @@ $option_fields['header'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_mobile_bottom_bar_custom_content'
+		'id'        => 'bs_mobile_bottom_bar_custom_content'
 		,'type'     => 'editor'
 		,'title'    => esc_html__( 'Mobile Bottom Bar Custom Content', 'bakershop' )
 		,'subtitle' => esc_html__( 'You can add more buttons or custom content to bottom bar on mobile', 'bakershop' )
@@ -2209,7 +2209,7 @@ $option_fields['header'] = array(
 /*** Menu Tab ***/
 $option_fields['menu'] = array(
 	array(
-		'id'             => 'ts_menu_thumb_width'
+		'id'             => 'bs_menu_thumb_width'
 		,'type'          => 'slider'
 		,'title'         => esc_html__( 'Menu Thumbnail Width', 'bakershop' )
 		,'subtitle'      => ''
@@ -2221,7 +2221,7 @@ $option_fields['menu'] = array(
 		,'display_value' => 'text'
 	)
 	,array(
-		'id'             => 'ts_menu_thumb_height'
+		'id'             => 'bs_menu_thumb_height'
 		,'type'          => 'slider'
 		,'title'         => esc_html__( 'Menu Thumbnail Height', 'bakershop' )
 		,'subtitle'      => ''
@@ -2233,7 +2233,7 @@ $option_fields['menu'] = array(
 		,'display_value' => 'text'
 	)
 	,array(
-		'id'        => 'ts_only_load_mobile_menu_on_mobile'
+		'id'        => 'bs_only_load_mobile_menu_on_mobile'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Only Load Mobile Menu On Mobile', 'bakershop' )
 		,'subtitle' => esc_html__( 'Only load mobile menu on a real mobile device. This may improve your site speed', 'bakershop' )
@@ -2251,7 +2251,7 @@ $option_fields['blog'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_blog_layout'
+		'id'        => 'bs_blog_layout'
 		,'type'     => 'image_select'
 		,'title'    => esc_html__( 'Blog Layout', 'bakershop' )
 		,'subtitle' => esc_html__( 'This option is available when Front page displays the latest posts', 'bakershop' )
@@ -2277,7 +2277,7 @@ $option_fields['blog'] = array(
 		,'default'  => '0-1-1'
 	)
 	,array(
-		'id'       	=> 'ts_blog_left_sidebar'
+		'id'       	=> 'bs_blog_left_sidebar'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Left Sidebar', 'bakershop' )
 		,'subtitle' => ''
@@ -2287,7 +2287,7 @@ $option_fields['blog'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
 	)
 	,array(
-		'id'       	=> 'ts_blog_right_sidebar'
+		'id'       	=> 'bs_blog_right_sidebar'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Right Sidebar', 'bakershop' )
 		,'subtitle' => ''
@@ -2297,7 +2297,7 @@ $option_fields['blog'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
 	)
 	,array(
-		'id'        => 'ts_blog_thumbnail'
+		'id'        => 'bs_blog_thumbnail'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Thumbnail', 'bakershop' )
 		,'subtitle' => ''
@@ -2306,7 +2306,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_date'
+		'id'        => 'bs_blog_date'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Date', 'bakershop' )
 		,'subtitle' => ''
@@ -2315,7 +2315,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_title'
+		'id'        => 'bs_blog_title'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Title', 'bakershop' )
 		,'subtitle' => ''
@@ -2324,7 +2324,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_author'
+		'id'        => 'bs_blog_author'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Author', 'bakershop' )
 		,'subtitle' => ''
@@ -2333,7 +2333,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_comment'
+		'id'        => 'bs_blog_comment'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Comment', 'bakershop' )
 		,'subtitle' => ''
@@ -2342,7 +2342,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_read_more'
+		'id'        => 'bs_blog_read_more'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Read More Button', 'bakershop' )
 		,'subtitle' => ''
@@ -2351,7 +2351,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_categories'
+		'id'        => 'bs_blog_categories'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Categories', 'bakershop' )
 		,'subtitle' => ''
@@ -2360,7 +2360,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_excerpt'
+		'id'        => 'bs_blog_excerpt'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Excerpt', 'bakershop' )
 		,'subtitle' => ''
@@ -2369,14 +2369,14 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_excerpt_strip_tags'
+		'id'        => 'bs_blog_excerpt_strip_tags'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Excerpt Strip All Tags', 'bakershop' )
 		,'subtitle' => esc_html__( 'Strip all html tags in Excerpt', 'bakershop' )
 		,'default'  => false
 	)
 	,array(
-		'id'        => 'ts_blog_excerpt_max_words'
+		'id'        => 'bs_blog_excerpt_max_words'
 		,'type'     => 'text'
 		,'title'    => esc_html__( 'Blog Excerpt Max Words', 'bakershop' )
 		,'subtitle' => esc_html__( 'Input -1 to show full excerpt', 'bakershop' )
@@ -2392,7 +2392,7 @@ $option_fields['blog'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_blog_details_layout'
+		'id'        => 'bs_blog_details_layout'
 		,'type'     => 'image_select'
 		,'title'    => esc_html__( 'Blog Details Layout', 'bakershop' )
 		,'subtitle' => ''
@@ -2418,7 +2418,7 @@ $option_fields['blog'] = array(
 		,'default'  => '0-1-1'
 	)
 	,array(
-		'id'       	=> 'ts_blog_details_left_sidebar'
+		'id'       	=> 'bs_blog_details_left_sidebar'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Left Sidebar', 'bakershop' )
 		,'subtitle' => ''
@@ -2428,7 +2428,7 @@ $option_fields['blog'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
 	)
 	,array(
-		'id'       	=> 'ts_blog_details_right_sidebar'
+		'id'       	=> 'bs_blog_details_right_sidebar'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Right Sidebar', 'bakershop' )
 		,'subtitle' => ''
@@ -2438,7 +2438,7 @@ $option_fields['blog'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
 	)
 	,array(
-		'id'        => 'ts_blog_details_thumbnail'
+		'id'        => 'bs_blog_details_thumbnail'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Thumbnail', 'bakershop' )
 		,'subtitle' => ''
@@ -2447,7 +2447,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_details_date'
+		'id'        => 'bs_blog_details_date'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Date', 'bakershop' )
 		,'subtitle' => ''
@@ -2456,7 +2456,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_details_title'
+		'id'        => 'bs_blog_details_title'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Title', 'bakershop' )
 		,'subtitle' => ''
@@ -2465,7 +2465,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_details_author'
+		'id'        => 'bs_blog_details_author'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Author', 'bakershop' )
 		,'subtitle' => ''
@@ -2474,7 +2474,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_details_comment'
+		'id'        => 'bs_blog_details_comment'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Comment', 'bakershop' )
 		,'subtitle' => ''
@@ -2483,7 +2483,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_details_content'
+		'id'        => 'bs_blog_details_content'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Content', 'bakershop' )
 		,'subtitle' => ''
@@ -2492,7 +2492,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_details_tags'
+		'id'        => 'bs_blog_details_tags'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Tags', 'bakershop' )
 		,'subtitle' => ''
@@ -2501,7 +2501,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_details_categories'
+		'id'        => 'bs_blog_details_categories'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Categories', 'bakershop' )
 		,'subtitle' => ''
@@ -2510,7 +2510,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_details_sharing'
+		'id'        => 'bs_blog_details_sharing'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Sharing', 'bakershop' )
 		,'subtitle' => ''
@@ -2519,24 +2519,24 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_details_sharing_sharethis'
+		'id'        => 'bs_blog_details_sharing_sharethis'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Sharing - Use ShareThis', 'bakershop' )
 		,'subtitle' => esc_html__( 'Use share buttons from sharethis.com. You need to add key below', 'bakershop')
 		,'default'  => true
-		,'required'	=> array( 'ts_blog_details_sharing', 'equals', '1' )
+		,'required'	=> array( 'bs_blog_details_sharing', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_blog_details_sharing_sharethis_key'
+		'id'        => 'bs_blog_details_sharing_sharethis_key'
 		,'type'     => 'text'
 		,'title'    => esc_html__( 'Blog Sharing - ShareThis Key', 'bakershop' )
 		,'subtitle' => esc_html__( 'You get it from script code. It is the value of "property" attribute', 'bakershop' )
 		,'desc'     => ''
 		,'default'  => ''
-		,'required'	=> array( 'ts_blog_details_sharing', 'equals', '1' )
+		,'required'	=> array( 'bs_blog_details_sharing', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_blog_details_author_box'
+		'id'        => 'bs_blog_details_author_box'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Author Box', 'bakershop' )
 		,'subtitle' => ''
@@ -2545,7 +2545,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_details_navigation'
+		'id'        => 'bs_blog_details_navigation'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Navigation', 'bakershop' )
 		,'subtitle' => ''
@@ -2554,7 +2554,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_details_related_posts'
+		'id'        => 'bs_blog_details_related_posts'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Related Posts', 'bakershop' )
 		,'subtitle' => ''
@@ -2563,7 +2563,7 @@ $option_fields['blog'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_blog_details_comment_form'
+		'id'        => 'bs_blog_details_comment_form'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Blog Comment Form', 'bakershop' )
 		,'subtitle' => ''
@@ -2576,7 +2576,7 @@ $option_fields['blog'] = array(
 /*** Portfolio Details Tab ***/
 $option_fields['portfolio-details'] = array(
 	array(
-		'id'       	=> 'ts_portfolio_page'
+		'id'       	=> 'bs_portfolio_page'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Portfolio Page', 'bakershop' )
 		,'subtitle' => esc_html__( 'Select the page which displays the list of portfolios. You also need to add our portfolio shortcode to that page', 'bakershop' )
@@ -2585,7 +2585,7 @@ $option_fields['portfolio-details'] = array(
 		,'default'	=> ''
 	)
 	,array(
-		'id'       	=> 'ts_portfolio_thumbnail_style'
+		'id'       	=> 'bs_portfolio_thumbnail_style'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Thumbnail Style', 'bakershop' )
 		,'subtitle' => ''
@@ -2598,7 +2598,7 @@ $option_fields['portfolio-details'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
 	)
 	,array(
-		'id'       	=> 'ts_portfolio_thumbnail_columns'
+		'id'       	=> 'bs_portfolio_thumbnail_columns'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Thumbnail Columns', 'bakershop' )
 		,'subtitle' => ''
@@ -2611,7 +2611,7 @@ $option_fields['portfolio-details'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
 	)
 	,array(
-		'id'        => 'ts_portfolio_thumbnail'
+		'id'        => 'bs_portfolio_thumbnail'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Portfolio Thumbnail', 'bakershop' )
 		,'subtitle' => ''
@@ -2620,7 +2620,7 @@ $option_fields['portfolio-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_portfolio_title'
+		'id'        => 'bs_portfolio_title'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Portfolio Title', 'bakershop' )
 		,'subtitle' => ''
@@ -2629,7 +2629,7 @@ $option_fields['portfolio-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_portfolio_likes'
+		'id'        => 'bs_portfolio_likes'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Portfolio Likes', 'bakershop' )
 		,'subtitle' => ''
@@ -2638,7 +2638,7 @@ $option_fields['portfolio-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_portfolio_content'
+		'id'        => 'bs_portfolio_content'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Portfolio Content', 'bakershop' )
 		,'subtitle' => ''
@@ -2647,7 +2647,7 @@ $option_fields['portfolio-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_portfolio_client'
+		'id'        => 'bs_portfolio_client'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Portfolio Client', 'bakershop' )
 		,'subtitle' => ''
@@ -2656,7 +2656,7 @@ $option_fields['portfolio-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_portfolio_year'
+		'id'        => 'bs_portfolio_year'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Portfolio Year', 'bakershop' )
 		,'subtitle' => ''
@@ -2665,7 +2665,7 @@ $option_fields['portfolio-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_portfolio_url'
+		'id'        => 'bs_portfolio_url'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Portfolio URL', 'bakershop' )
 		,'subtitle' => ''
@@ -2674,7 +2674,7 @@ $option_fields['portfolio-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_portfolio_categories'
+		'id'        => 'bs_portfolio_categories'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Portfolio Categories', 'bakershop' )
 		,'subtitle' => ''
@@ -2683,7 +2683,7 @@ $option_fields['portfolio-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_portfolio_sharing'
+		'id'        => 'bs_portfolio_sharing'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Portfolio Sharing', 'bakershop' )
 		,'subtitle' => ''
@@ -2692,7 +2692,7 @@ $option_fields['portfolio-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_portfolio_related_posts'
+		'id'        => 'bs_portfolio_related_posts'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Portfolio Related Posts', 'bakershop' )
 		,'subtitle' => ''
@@ -2701,7 +2701,7 @@ $option_fields['portfolio-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_portfolio_custom_field'
+		'id'        => 'bs_portfolio_custom_field'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Portfolio Custom Field', 'bakershop' )
 		,'subtitle' => ''
@@ -2710,16 +2710,16 @@ $option_fields['portfolio-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_portfolio_custom_field_title'
+		'id'        => 'bs_portfolio_custom_field_title'
 		,'type'     => 'text'
 		,'title'    => esc_html__( 'Portfolio Custom Field Title', 'bakershop' )
 		,'subtitle' => ''
 		,'desc'     => ''
 		,'default'  => 'Custom Field'
-		,'required'	=> array( 'ts_portfolio_custom_field', 'equals', '1' )
+		,'required'	=> array( 'bs_portfolio_custom_field', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_portfolio_custom_field_content'
+		'id'        => 'bs_portfolio_custom_field_content'
 		,'type'     => 'editor'
 		,'title'    => esc_html__( 'Portfolio Custom Field Content', 'bakershop' )
 		,'subtitle' => ''
@@ -2732,7 +2732,7 @@ $option_fields['portfolio-details'] = array(
 			,'teeny'         => false
 			,'quicktags'     => true
 		)
-		,'required'	=> array( 'ts_portfolio_custom_field', 'equals', '1' )
+		,'required'	=> array( 'bs_portfolio_custom_field', 'equals', '1' )
 	)
 );
 
@@ -2746,7 +2746,7 @@ $option_fields['woocommerce'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'       	=> 'ts_product_label_style'
+		'id'       	=> 'bs_product_label_style'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Product Label Style', 'bakershop' )
 		,'subtitle' => ''
@@ -2759,7 +2759,7 @@ $option_fields['woocommerce'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
 	)
 	,array(
-		'id'        => 'ts_product_show_new_label'
+		'id'        => 'bs_product_show_new_label'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product New Label', 'bakershop' )
 		,'subtitle' => ''
@@ -2768,25 +2768,25 @@ $option_fields['woocommerce'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_product_new_label_text'
+		'id'        => 'bs_product_new_label_text'
 		,'type'     => 'text'
 		,'title'    => esc_html__( 'Product New Label Text', 'bakershop' )
 		,'subtitle' => ''
 		,'desc'     => ''
 		,'default'  => 'New'
-		,'required'	=> array( 'ts_product_show_new_label', 'equals', '1' )
+		,'required'	=> array( 'bs_product_show_new_label', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_product_show_new_label_time'
+		'id'        => 'bs_product_show_new_label_time'
 		,'type'     => 'text'
 		,'title'    => esc_html__( 'Product New Label Time', 'bakershop' )
 		,'subtitle' => esc_html__( 'Number of days which you want to show New label since product is published', 'bakershop' )
 		,'desc'     => ''
 		,'default'  => '30'
-		,'required'	=> array( 'ts_product_show_new_label', 'equals', '1' )
+		,'required'	=> array( 'bs_product_show_new_label', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_product_sale_label_text'
+		'id'        => 'bs_product_sale_label_text'
 		,'type'     => 'text'
 		,'title'    => esc_html__( 'Product Sale Label Text', 'bakershop' )
 		,'subtitle' => ''
@@ -2794,7 +2794,7 @@ $option_fields['woocommerce'] = array(
 		,'default'  => 'Sale'
 	)
 	,array(
-		'id'        => 'ts_product_feature_label_text'
+		'id'        => 'bs_product_feature_label_text'
 		,'type'     => 'text'
 		,'title'    => esc_html__( 'Product Feature Label Text', 'bakershop' )
 		,'subtitle' => ''
@@ -2802,7 +2802,7 @@ $option_fields['woocommerce'] = array(
 		,'default'  => 'Hot'
 	)
 	,array(
-		'id'        => 'ts_product_out_of_stock_label_text'
+		'id'        => 'bs_product_out_of_stock_label_text'
 		,'type'     => 'text'
 		,'title'    => esc_html__( 'Product Out Of Stock Label Text', 'bakershop' )
 		,'subtitle' => ''
@@ -2810,7 +2810,7 @@ $option_fields['woocommerce'] = array(
 		,'default'  => 'Sold out'
 	)
 	,array(
-		'id'       	=> 'ts_show_sale_label_as'
+		'id'       	=> 'bs_show_sale_label_as'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Show Sale Label As', 'bakershop' )
 		,'subtitle' => ''
@@ -2832,7 +2832,7 @@ $option_fields['woocommerce'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'       	=> 'ts_product_rating_style'
+		'id'       	=> 'bs_product_rating_style'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Product Rating Style', 'bakershop' )
 		,'subtitle' => ''
@@ -2853,7 +2853,7 @@ $option_fields['woocommerce'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'       	=> 'ts_product_hover_style'
+		'id'       	=> 'bs_product_hover_style'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Hover Style', 'bakershop' )
 		,'subtitle' => esc_html__( 'Select the style of buttons/icons when hovering on product', 'bakershop' )
@@ -2866,14 +2866,14 @@ $option_fields['woocommerce'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
 	)
 	,array(
-		'id'        => 'ts_effect_product'
+		'id'        => 'bs_effect_product'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Back Product Image', 'bakershop' )
 		,'subtitle' => esc_html__( 'Show another product image on hover. It will show an image from Product Gallery', 'bakershop' )
 		,'default'  => false
 	)
 	,array(
-		'id'        => 'ts_product_tooltip'
+		'id'        => 'bs_product_tooltip'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Tooltip', 'bakershop' )
 		,'subtitle' => esc_html__( 'Show tooltip when hovering on buttons/icons on product', 'bakershop' )
@@ -2888,14 +2888,14 @@ $option_fields['woocommerce'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_prod_lazy_load'
+		'id'        => 'bs_prod_lazy_load'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Activate Lazy Load', 'bakershop' )
 		,'subtitle' => ''
 		,'default'  => true
 	)
 	,array(
-		'id'        => 'ts_prod_placeholder_img'
+		'id'        => 'bs_prod_placeholder_img'
 		,'type'     => 'media'
 		,'url'      => true
 		,'title'    => esc_html__( 'Placeholder Image', 'bakershop' )
@@ -2913,7 +2913,7 @@ $option_fields['woocommerce'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_enable_quickshop'
+		'id'        => 'bs_enable_quickshop'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Activate Quickshop', 'bakershop' )
 		,'subtitle' => ''
@@ -2928,7 +2928,7 @@ $option_fields['woocommerce'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_enable_catalog_mode'
+		'id'        => 'bs_enable_catalog_mode'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Enable Catalog Mode', 'bakershop' )
 		,'subtitle' => esc_html__( 'Hide all Add To Cart buttons on your site. You can also hide Shopping cart by going to Header tab > turn Shopping Cart option off', 'bakershop' )
@@ -2943,14 +2943,14 @@ $option_fields['woocommerce'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_ajax_search'
+		'id'        => 'bs_ajax_search'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Enable Ajax Search', 'bakershop' )
 		,'subtitle' => ''
 		,'default'  => true
 	)
 	,array(
-		'id'        => 'ts_ajax_search_number_result'
+		'id'        => 'bs_ajax_search_number_result'
 		,'type'     => 'text'
 		,'title'    => esc_html__( 'Number Of Results', 'bakershop' )
 		,'subtitle' => esc_html__( 'Input -1 to show all results', 'bakershop' )
@@ -2966,7 +2966,7 @@ $option_fields['woocommerce'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_cart_checkout_process_bar'
+		'id'        => 'bs_cart_checkout_process_bar'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Cart Checkout Process Bar', 'bakershop' )
 		,'subtitle' => ''
@@ -2977,7 +2977,7 @@ $option_fields['woocommerce'] = array(
 /*** Shop/Product Category Tab ***/
 $option_fields['shop-product-category'] = array(
 	array(
-		'id'        => 'ts_prod_cat_layout'
+		'id'        => 'bs_prod_cat_layout'
 		,'type'     => 'image_select'
 		,'title'    => esc_html__( 'Shop/Product Category Layout', 'bakershop' )
 		,'subtitle' => esc_html__( 'Sidebar is only available if Filter Widget Area is disabled', 'bakershop' )
@@ -3003,7 +3003,7 @@ $option_fields['shop-product-category'] = array(
 		,'default'  => '0-1-0'
 	)
 	,array(
-		'id'       	=> 'ts_prod_cat_left_sidebar'
+		'id'       	=> 'bs_prod_cat_left_sidebar'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Left Sidebar', 'bakershop' )
 		,'subtitle' => ''
@@ -3013,7 +3013,7 @@ $option_fields['shop-product-category'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
 	)
 	,array(
-		'id'       	=> 'ts_prod_cat_right_sidebar'
+		'id'       	=> 'bs_prod_cat_right_sidebar'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Right Sidebar', 'bakershop' )
 		,'subtitle' => ''
@@ -3023,7 +3023,7 @@ $option_fields['shop-product-category'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
 	)
 	,array(
-		'id'       	=> 'ts_prod_cat_columns'
+		'id'       	=> 'bs_prod_cat_columns'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Product Columns', 'bakershop' )
 		,'subtitle' => ''
@@ -3038,7 +3038,7 @@ $option_fields['shop-product-category'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
 	)
 	,array(
-		'id'        => 'ts_prod_cat_per_page'
+		'id'        => 'bs_prod_cat_per_page'
 		,'type'     => 'text'
 		,'title'    => esc_html__( 'Products Per Page', 'bakershop' )
 		,'subtitle' => esc_html__( 'Number of products per page', 'bakershop' )
@@ -3046,7 +3046,7 @@ $option_fields['shop-product-category'] = array(
 		,'default'  => '20'
 	)
 	,array(
-		'id'       	=> 'ts_prod_cat_loading_type'
+		'id'       	=> 'bs_prod_cat_loading_type'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Product Loading Type', 'bakershop' )
 		,'subtitle' => ''
@@ -3061,7 +3061,7 @@ $option_fields['shop-product-category'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
 	)
 	,array(
-		'id'        => 'ts_prod_cat_per_page_dropdown'
+		'id'        => 'bs_prod_cat_per_page_dropdown'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Products Per Page Dropdown', 'bakershop' )
 		,'subtitle' => esc_html__( 'Allow users to select number of products per page', 'bakershop' )
@@ -3070,7 +3070,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat_onsale_checkbox'
+		'id'        => 'bs_prod_cat_onsale_checkbox'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Products On Sale Checkbox', 'bakershop' )
 		,'subtitle' => esc_html__( 'Allow users to view only the discounted products', 'bakershop' )
@@ -3079,7 +3079,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat_glt'
+		'id'        => 'bs_prod_cat_glt'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Grid/List Toggle', 'bakershop' )
 		,'subtitle' => ''
@@ -3088,7 +3088,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'       	=> 'ts_prod_cat_glt_default'
+		'id'       	=> 'bs_prod_cat_glt_default'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Grid/List Toggle Default', 'bakershop' )
 		,'subtitle' => ''
@@ -3099,20 +3099,20 @@ $option_fields['shop-product-category'] = array(
 		)
 		,'default'  => 'grid'
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
-		,'required'	=> array( 'ts_prod_cat_glt', 'equals', '1' )
+		,'required'	=> array( 'bs_prod_cat_glt', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat_quantity_input'
+		'id'        => 'bs_prod_cat_quantity_input'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Quantity Input', 'bakershop' )
 		,'subtitle' => esc_html__( 'Show the quantity input on the List view', 'bakershop' )
 		,'default'  => true
 		,'on'		=> esc_html__( 'Show', 'bakershop' )
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
-		,'required'	=> array( 'ts_prod_cat_glt', 'equals', '1' )
+		,'required'	=> array( 'bs_prod_cat_glt', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_filter_widget_area'
+		'id'        => 'bs_filter_widget_area'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Filter Widget Area', 'bakershop' )
 		,'subtitle' => esc_html__( 'Display Filter Widget Area on the Shop/Product Category page. If enabled, the shop sidebar will be removed', 'bakershop' )
@@ -3121,7 +3121,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'       	=> 'ts_filter_widget_area_style'
+		'id'       	=> 'bs_filter_widget_area_style'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Filter Widget Area Style', 'bakershop' )
 		,'subtitle' => ''
@@ -3132,10 +3132,10 @@ $option_fields['shop-product-category'] = array(
 		)
 		,'default'  => 'sidebar'
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
-		,'required'	=> array( 'ts_filter_widget_area', 'equals', '1' )
+		,'required'	=> array( 'bs_filter_widget_area', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat_bestsellers'
+		'id'        => 'bs_prod_cat_bestsellers'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Best Selling Products', 'bakershop' )
 		,'subtitle' => esc_html__( 'Show best selling products at the top of product category page. It only shows if total products is more than double the maximum best selling products (default is 7)', 'bakershop' )
@@ -3144,7 +3144,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat_thumbnail'
+		'id'        => 'bs_prod_cat_thumbnail'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Thumbnail', 'bakershop' )
 		,'subtitle' => ''
@@ -3153,7 +3153,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat_label'
+		'id'        => 'bs_prod_cat_label'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Label', 'bakershop' )
 		,'subtitle' => ''
@@ -3162,7 +3162,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat_brand'
+		'id'        => 'bs_prod_cat_brand'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Brands', 'bakershop' )
 		,'subtitle' => esc_html__( 'Add brands to product list on all pages', 'bakershop' )
@@ -3171,7 +3171,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat_cat'
+		'id'        => 'bs_prod_cat_cat'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Categories', 'bakershop' )
 		,'subtitle' => ''
@@ -3180,7 +3180,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat_title'
+		'id'        => 'bs_prod_cat_title'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Title', 'bakershop' )
 		,'subtitle' => ''
@@ -3189,7 +3189,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat_sku'
+		'id'        => 'bs_prod_cat_sku'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product SKU', 'bakershop' )
 		,'subtitle' => ''
@@ -3198,7 +3198,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat_rating'
+		'id'        => 'bs_prod_cat_rating'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Rating', 'bakershop' )
 		,'subtitle' => ''
@@ -3207,7 +3207,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat_price'
+		'id'        => 'bs_prod_cat_price'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Price', 'bakershop' )
 		,'subtitle' => ''
@@ -3216,7 +3216,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat_add_to_cart'
+		'id'        => 'bs_prod_cat_add_to_cart'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Add To Cart Button', 'bakershop' )
 		,'subtitle' => ''
@@ -3225,7 +3225,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat_desc'
+		'id'        => 'bs_prod_cat_desc'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Short Description', 'bakershop' )
 		,'subtitle' => ''
@@ -3234,7 +3234,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat_desc_words'
+		'id'        => 'bs_prod_cat_desc_words'
 		,'type'     => 'text'
 		,'title'    => esc_html__( 'Product Short Description - Limit Words', 'bakershop' )
 		,'subtitle' => esc_html__( 'It is also used for product shortcode', 'bakershop' )
@@ -3242,7 +3242,7 @@ $option_fields['shop-product-category'] = array(
 		,'default'  => '8'
 	)
 	,array(
-		'id'        => 'ts_prod_cat_color_swatch'
+		'id'        => 'bs_prod_cat_color_swatch'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Color Swatches', 'bakershop' )
 		,'subtitle' => esc_html__( 'Show the color attribute of variations. The slug of the color attribute has to be "color"', 'bakershop' )
@@ -3251,7 +3251,7 @@ $option_fields['shop-product-category'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'       	=> 'ts_prod_cat_number_color_swatch'
+		'id'       	=> 'bs_prod_cat_number_color_swatch'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Number Of Color Swatches', 'bakershop' )
 		,'subtitle' => ''
@@ -3265,14 +3265,14 @@ $option_fields['shop-product-category'] = array(
 		)
 		,'default'  => '3'
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
-		,'required'	=> array( 'ts_prod_cat_color_swatch', 'equals', '1' )
+		,'required'	=> array( 'bs_prod_cat_color_swatch', 'equals', '1' )
 	)
 );
 
 /*** Product Details Tab ***/
 $option_fields['product-details'] = array(
 	array(
-		'id'        => 'ts_prod_layout'
+		'id'        => 'bs_prod_layout'
 		,'type'     => 'image_select'
 		,'title'    => esc_html__( 'Product Layout', 'bakershop' )
 		,'subtitle' => ''
@@ -3298,7 +3298,7 @@ $option_fields['product-details'] = array(
 		,'default'  => '0-1-0'
 	)
 	,array(
-		'id'       	=> 'ts_prod_left_sidebar'
+		'id'       	=> 'bs_prod_left_sidebar'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Left Sidebar', 'bakershop' )
 		,'subtitle' => ''
@@ -3308,7 +3308,7 @@ $option_fields['product-details'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
 	)
 	,array(
-		'id'       	=> 'ts_prod_right_sidebar'
+		'id'       	=> 'bs_prod_right_sidebar'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Right Sidebar', 'bakershop' )
 		,'subtitle' => ''
@@ -3318,50 +3318,50 @@ $option_fields['product-details'] = array(
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
 	)
 	,array(
-		'id'        => 'ts_prod_breadcrumb'
+		'id'        => 'bs_prod_breadcrumb'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Breadcrumb', 'bakershop' )
 		,'subtitle' => ''
 		,'default'  => true
 	)
 	,array(
-		'id'        => 'ts_prod_cloudzoom'
+		'id'        => 'bs_prod_cloudzoom'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Cloud Zoom', 'bakershop' )
 		,'subtitle' => ''
 		,'default'  => true
 	)
 	,array(
-		'id'        => 'ts_prod_lightbox'
+		'id'        => 'bs_prod_lightbox'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Lightbox', 'bakershop' )
 		,'subtitle' => ''
 		,'default'  => true
 	)
 	,array(
-		'id'        => 'ts_prod_attr_dropdown'
+		'id'        => 'bs_prod_attr_dropdown'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Attribute Dropdown', 'bakershop' )
 		,'subtitle' => esc_html__( 'If you turn it off, the dropdown will be replaced by image or text label', 'bakershop' )
 		,'default'  => true
 	)
 	,array(
-		'id'        => 'ts_prod_attr_color_text'
+		'id'        => 'bs_prod_attr_color_text'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Attribute Color Text', 'bakershop' )
 		,'subtitle' => esc_html__( 'Show text for the Color attribute instead of color/color image', 'bakershop' )
 		,'default'  => false
-		,'required'	=> array( 'ts_prod_attr_dropdown', 'equals', '0' )
+		,'required'	=> array( 'bs_prod_attr_dropdown', 'equals', '0' )
 	)
 	,array(
-		'id'        => 'ts_prod_summary_2_columns'
+		'id'        => 'bs_prod_summary_2_columns'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Summary 2 Columns', 'bakershop' )
 		,'subtitle' => esc_html__( 'If product has sidebar, this option will be disabled', 'bakershop' )
 		,'default'  => false
 	)
 	,array(
-		'id'        => 'ts_prod_next_prev_navigation'
+		'id'        => 'bs_prod_next_prev_navigation'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Next/Prev Product Navigation', 'bakershop' )
 		,'subtitle' => ''
@@ -3370,7 +3370,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_thumbnail'
+		'id'        => 'bs_prod_thumbnail'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Thumbnail', 'bakershop' )
 		,'subtitle' => ''
@@ -3379,7 +3379,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_label'
+		'id'        => 'bs_prod_label'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Label', 'bakershop' )
 		,'subtitle' => ''
@@ -3388,7 +3388,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_title'
+		'id'        => 'bs_prod_title'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Title', 'bakershop' )
 		,'subtitle' => ''
@@ -3397,14 +3397,14 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_title_in_content'
+		'id'        => 'bs_prod_title_in_content'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Title In Content', 'bakershop' )
 		,'subtitle' => esc_html__( 'Display the product title in the page content instead of above the breadcrumbs', 'bakershop' )
 		,'default'  => true
 	)
 	,array(
-		'id'        => 'ts_prod_rating'
+		'id'        => 'bs_prod_rating'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Rating', 'bakershop' )
 		,'subtitle' => ''
@@ -3413,7 +3413,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_excerpt'
+		'id'        => 'bs_prod_excerpt'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Excerpt', 'bakershop' )
 		,'subtitle' => ''
@@ -3422,7 +3422,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_count_down'
+		'id'        => 'bs_prod_count_down'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Count Down', 'bakershop' )
 		,'subtitle' => esc_html__( 'You have to activate ThemeSky plugin', 'bakershop' )
@@ -3431,7 +3431,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_price'
+		'id'        => 'bs_prod_price'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Price', 'bakershop' )
 		,'subtitle' => ''
@@ -3440,7 +3440,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_add_to_cart'
+		'id'        => 'bs_prod_add_to_cart'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Add To Cart Button', 'bakershop' )
 		,'subtitle' => ''
@@ -3449,15 +3449,15 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_ajax_add_to_cart'
+		'id'        => 'bs_prod_ajax_add_to_cart'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Ajax Add To Cart', 'bakershop' )
 		,'subtitle' => ''
 		,'default'  => true
-		,'required'	=> array( 'ts_prod_add_to_cart', 'equals', '1' )
+		,'required'	=> array( 'bs_prod_add_to_cart', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_prod_buy_now'
+		'id'        => 'bs_prod_buy_now'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Buy Now Button', 'bakershop' )
 		,'subtitle' => esc_html__( 'Only support the simple and variable products', 'bakershop' )
@@ -3466,7 +3466,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_sku'
+		'id'        => 'bs_prod_sku'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product SKU', 'bakershop' )
 		,'subtitle' => ''
@@ -3475,7 +3475,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_availability'
+		'id'        => 'bs_prod_availability'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Availability', 'bakershop' )
 		,'subtitle' => ''
@@ -3484,7 +3484,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_sold_number'
+		'id'        => 'bs_prod_sold_number'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Sold Number', 'bakershop' )
 		,'subtitle' => ''
@@ -3493,7 +3493,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_brand'
+		'id'        => 'bs_prod_brand'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Brands', 'bakershop' )
 		,'subtitle' => ''
@@ -3502,7 +3502,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_cat'
+		'id'        => 'bs_prod_cat'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Categories', 'bakershop' )
 		,'subtitle' => ''
@@ -3511,7 +3511,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_tag'
+		'id'        => 'bs_prod_tag'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Tags', 'bakershop' )
 		,'subtitle' => ''
@@ -3520,7 +3520,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_sharing'
+		'id'        => 'bs_prod_sharing'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Sharing', 'bakershop' )
 		,'subtitle' => ''
@@ -3529,24 +3529,24 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_sharing_sharethis'
+		'id'        => 'bs_prod_sharing_sharethis'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Sharing - Use ShareThis', 'bakershop' )
 		,'subtitle' => esc_html__( 'Use share buttons from sharethis.com. You need to add key below', 'bakershop' )
 		,'default'  => false
-		,'required'	=> array( 'ts_prod_sharing', 'equals', '1' )
+		,'required'	=> array( 'bs_prod_sharing', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_prod_sharing_sharethis_key'
+		'id'        => 'bs_prod_sharing_sharethis_key'
 		,'type'     => 'text'
 		,'title'    => esc_html__( 'Product Sharing - ShareThis Key', 'bakershop' )
 		,'subtitle' => esc_html__( 'You get it from script code. It is the value of "property" attribute', 'bakershop' )
 		,'desc'     => ''
 		,'default'  => ''
-		,'required'	=> array( 'ts_prod_sharing', 'equals', '1' )
+		,'required'	=> array( 'bs_prod_sharing', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_prod_size_chart'
+		'id'        => 'bs_prod_size_chart'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Size Chart', 'bakershop' )
 		,'subtitle' => ''
@@ -3555,7 +3555,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'       	=> 'ts_prod_size_chart_style'
+		'id'       	=> 'bs_prod_size_chart_style'
 		,'type'     => 'select'
 		,'title'    => esc_html__( 'Product Size Chart Style', 'bakershop' )
 		,'subtitle' => esc_html__( 'Modal Popup is only available if the slug of the Size attribute is "size" and Attribute Dropdown is disabled', 'bakershop' )
@@ -3566,17 +3566,17 @@ $option_fields['product-details'] = array(
 		)
 		,'default'  => 'popup'
 		,'select2'	=> array('allowClear' => false, 'minimumResultsForSearch' => 'Infinity')
-		,'required'	=> array( 'ts_prod_size_chart', 'equals', '1' )
+		,'required'	=> array( 'bs_prod_size_chart', 'equals', '1' )
 	)
 	,array(
-		'id'        => 'ts_prod_more_less_content'
+		'id'        => 'bs_prod_more_less_content'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product More/Less Content', 'bakershop' )
 		,'subtitle' => esc_html__( 'Show more/less content in the Description tab', 'bakershop' )
 		,'default'  => true
 	)
 	,array(
-		'id'        => 'ts_prod_wfbt_in_summary'
+		'id'        => 'bs_prod_wfbt_in_summary'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Frequently Bought Together In Summary', 'bakershop' )
 		,'subtitle' => esc_html__( 'Move Frequently Bought Together to product summary', 'bakershop' )
@@ -3591,7 +3591,7 @@ $option_fields['product-details'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_prod_tabs'
+		'id'        => 'bs_prod_tabs'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Tabs', 'bakershop' )
 		,'subtitle' => ''
@@ -3600,14 +3600,14 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_tabs_show_content_default'
+		'id'        => 'bs_prod_tabs_show_content_default'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Show Product Tabs Content By Default', 'bakershop' )
 		,'subtitle' => esc_html__( 'Show the content of all tabs by default and hide the tab headings', 'bakershop' )
 		,'default'  => false
 	)
 	,array(
-		'id'        => 'ts_prod_custom_tab'
+		'id'        => 'bs_prod_custom_tab'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Product Custom Tab', 'bakershop' )
 		,'subtitle' => ''
@@ -3616,7 +3616,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_custom_tab_title'
+		'id'        => 'bs_prod_custom_tab_title'
 		,'type'     => 'text'
 		,'title'    => esc_html__( 'Product Custom Tab Title', 'bakershop' )
 		,'subtitle' => ''
@@ -3624,7 +3624,7 @@ $option_fields['product-details'] = array(
 		,'default'  => 'Custom tab'
 	)
 	,array(
-		'id'        => 'ts_prod_custom_tab_content'
+		'id'        => 'bs_prod_custom_tab_content'
 		,'type'     => 'editor'
 		,'title'    => esc_html__( 'Product Custom Tab Content', 'bakershop' )
 		,'subtitle' => ''
@@ -3647,7 +3647,7 @@ $option_fields['product-details'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_prod_ads_banner'
+		'id'        => 'bs_prod_ads_banner'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Ads Banner', 'bakershop' )
 		,'subtitle' => ''
@@ -3656,7 +3656,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_ads_banner_content'
+		'id'        => 'bs_prod_ads_banner_content'
 		,'type'     => 'editor'
 		,'title'    => esc_html__( 'Ads Banner Content', 'bakershop' )
 		,'subtitle' => ''
@@ -3679,7 +3679,7 @@ $option_fields['product-details'] = array(
 		,'indent'   => false
 	)
 	,array(
-		'id'        => 'ts_prod_upsells'
+		'id'        => 'bs_prod_upsells'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Up-Sell Products', 'bakershop' )
 		,'subtitle' => ''
@@ -3688,7 +3688,7 @@ $option_fields['product-details'] = array(
 		,'off'		=> esc_html__( 'Hide', 'bakershop' )
 	)
 	,array(
-		'id'        => 'ts_prod_related'
+		'id'        => 'bs_prod_related'
 		,'type'     => 'switch'
 		,'title'    => esc_html__( 'Related Products', 'bakershop' )
 		,'subtitle' => ''
@@ -3701,7 +3701,7 @@ $option_fields['product-details'] = array(
 /*** Custom Code Tab ***/
 $option_fields['custom-code'] = array(
 	array(
-		'id'        => 'ts_custom_css_code'
+		'id'        => 'bs_custom_css_code'
 		,'type'     => 'ace_editor'
 		,'title'    => esc_html__( 'Custom CSS Code', 'bakershop' )
 		,'subtitle' => ''
@@ -3711,7 +3711,7 @@ $option_fields['custom-code'] = array(
 		,'default'  => ''
 	)
 	,array(
-		'id'        => 'ts_custom_javascript_code'
+		'id'        => 'bs_custom_javascript_code'
 		,'type'     => 'ace_editor'
 		,'title'    => esc_html__( 'Custom Javascript Code', 'bakershop' )
 		,'subtitle' => ''
